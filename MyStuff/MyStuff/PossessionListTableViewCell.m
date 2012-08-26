@@ -30,8 +30,7 @@ static NSString * const kPossessionValuePath=@"value";
 
 -(void)setPossession:(Possession *)possession
 {
-    
-    NSLog(@"Estamos en setPossession.");
+
     
     if(isObservingPossession==YES){
         [_possession removeObserver:self forKeyPath:kPossessionNamePath];
